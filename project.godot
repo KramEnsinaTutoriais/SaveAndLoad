@@ -17,7 +17,12 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SaveAndload="*res://script/saveAndload.gd"
+SaveAndload="*res://script/saveAndloadWithSlots.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
 
 [dotnet]
 

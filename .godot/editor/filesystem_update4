@@ -1,2 +1,1 @@
-res://scenes/main.tscn
-res://script/main.gd
+res://script/saveAndloadWithSlots.gd

@@ -1,8 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1727707484
+::res://::1732301952
 icon.svg::CompressedTexture2D::1436364654949009914::1721924418::1721924425::1::::<><>::
-::res://scenes/::1726665060
-main.tscn::PackedScene::4934520099845837099::1726665060::0::1::::<><>::res://script/main.gd
-::res://script/::1726666146
-main.gd::GDScript::-1::1726666146::0::1::::<>Control<>::
+README.md::TextFile::-1::1727710109::0::1::::<><>::
+::res://scenes/::1732225612
+main.tscn::PackedScene::4934520099845837099::1732225612::0::1::::<><>::res://script/mainWithSlots.gd
+::res://script/::1732226564
+main.gd::GDScript::-1::1727707489::0::1::::<>Control<>::
+mainWithSlots.gd::GDScript::-1::1732226564::0::1::::<>Control<>::
 saveAndload.gd::GDScript::-1::1726666146::0::1::::<>Node<>::
+saveAndloadWithSlots.gd::GDScript::-1::1732226564::0::1::::<>Node<>::

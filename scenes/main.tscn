@@ -1,11 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cckk3b22ttgx4"]
+[gd_scene load_steps=3 format=3 uid="uid://cckk3b22ttgx4"]
 
-[ext_resource type="Script" path="res://script/main.gd" id="1_noq7l"]
+[ext_resource type="Script" path="res://script/mainWithSlots.gd" id="1_sosgl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otbso"]
+bg_color = Color(0.550781, 0.550781, 0.550781, 1)
 
 [node name="main" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_noq7l")
+script = ExtResource("1_sosgl")
 
 [node name="Lb_life" type="Label" parent="."]
 unique_name_in_owner = true
@@ -15,6 +18,14 @@ offset_top = 160.0
 offset_right = 238.0
 offset_bottom = 197.0
 text = "Vida: 100"
+
+[node name="Lb_saveSlot" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 709.0
+offset_top = 76.0
+offset_right = 781.0
+offset_bottom = 99.0
 
 [node name="Lb_coin" type="Label" parent="."]
 unique_name_in_owner = true
@@ -174,6 +185,23 @@ offset_right = 800.0
 offset_bottom = 296.0
 text = "spear
 "
+
+[node name="slotButton" type="MenuButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 614.0
+offset_top = 74.0
+offset_right = 690.0
+offset_bottom = 97.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_otbso")
+text = "slots save"
+switch_on_hover = true
+item_count = 3
+popup/item_0/text = "1"
+popup/item_1/text = "2"
+popup/item_1/id = 1
+popup/item_2/text = "3"
+popup/item_2/id = 2
 
 [connection signal="pressed" from="bt_saveAll" to="." method="_on_bt_save_all_pressed"]
 [connection signal="pressed" from="bt_ResetSave" to="." method="_on_bt_reset_save_pressed"]
